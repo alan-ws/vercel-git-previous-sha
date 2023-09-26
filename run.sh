@@ -1,8 +1,10 @@
 #!/bin/bash
-if [[ $VERCEL_GIT_PREVIOUS_SHA == b6aa87a5fda07e460ec8243060b44394148c1695 ]]; then
-    echo YES
+if [[ $VERCEL_GIT_PREVIOUS_SHA == ad8f389b43283b687180d98d613810d5418121ea ]]; then
+    echo "we have cancelled the deployment"
+    echo "because SHA ad8f389b43283b687180d98d613810d5418121ea is equal to" $VERCEL_GIT_PREVIOUS_SHA
     exit 0
 else
-    echo NO
+    echo "we did not cancel the deployment"
+    echo "because SHA ad8f389b43283b687180d98d613810d5418121ea is equal to" $VERCEL_GIT_PREVIOUS_SHA
     exit 1
 fi
