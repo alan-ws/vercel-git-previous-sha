@@ -1,8 +1,8 @@
 #!/bin/bash
-if [[ $VERCEL_GIT_PREVIOUS_SHA == d151180db0437b1f816153446ee4e1473071d3f6 ]]; then
+if [[ $VERCEL_GIT_PREVIOUS_SHA == 77612ddfd351a51c99c7783f19d2b6c3df5afe81 ]]; then
     echo YES
-    exit 1
+    exit 0
 else
     echo NO
-    exit 0
+    exit 1
 fi
