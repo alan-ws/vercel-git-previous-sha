@@ -44,6 +44,7 @@ export default async function Home() {
             return (
               <div key={i}>
                 <h1>{val.title}</h1>
+                <h2>do it different</h2>
               </div>
             );
           })}
