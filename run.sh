@@ -12,7 +12,7 @@
 regex_pattern="Merge branch (.+)"
 if [[ $VERCEL_GIT_COMMIT_MESSAGE =~ $regex_pattern ]]; then
     matched_text="${BASH_REMATCH[1]}"
-    echo "Commit message matches the pattern 'Merge branch $matched_text'"
+    echo "Commit message matches 'Merge branch $matched_text'"
     exit 1
 else
     echo "we have cancelled the deployment"
